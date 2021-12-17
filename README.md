@@ -1,11 +1,3 @@
-# signal-clone 
-# Live Web - 
-https://signal-clone-ekas.web.app/ - **To use, click on top left profile pic button and login first.**
-# For IOS or Android - 
-https://expo.io/@arshpreet/projects/signal-clone and Scan the URL
-
-practise by watching Sonny Sangha channel youtube. https://www.youtube.com/watch?v=MJzmZ9qmdaE
-
 # Expo CLI
 
 If you have problems with the code in this repository, please file issues & bug reports
@@ -27,19 +19,19 @@ The server will continue running until you close it.
 
 To view this on your phone, do the following:
 
-- Go get the Expo app on your Android or iOS device. It's available [on the Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) and [on the iOS App Store](https://itunes.com/apps/exponent).
+-   Go get the Expo app on your Android or iOS device. It's available [on the Google Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent) and [on the iOS App Store](https://itunes.com/apps/exponent).
 
-- Run `expo send` to send a link via email. You can also use the `--send-to` option when running `expo start`.
+-   Run `expo send` to send a link via email. You can also use the `--send-to` option when running `expo start`.
 
-- Check your e-mail and tap the link. The Expo app should open and you should be able to view your experience there!
+-   Check your e-mail and tap the link. The Expo app should open and you should be able to view your experience there!
 
 ## Publishing a Project
 
 To publish something you've made, just follow these steps:
 
-- Create an Expo account or login to an existing one by running `expo login`.
-- Run an Expo CLI server using `expo start`.
-- Check to make sure you can load your app by opening it in the Expo app.
-- Once everything looks good, run `expo publish`. A few seconds later, you should get a clean URL sent to you that points to the exp.host server where your package was published to.
+-   Create an Expo account or login to an existing one by running `expo login`.
+-   Run an Expo CLI server using `expo start`.
+-   Check to make sure you can load your app by opening it in the Expo app.
+-   Once everything looks good, run `expo publish`. A few seconds later, you should get a clean URL sent to you that points to the exp.host server where your package was published to.
 
 You can publish as many times as you want and it will replace your old version, so don't worry about making a mistake!
