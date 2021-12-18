@@ -10,36 +10,48 @@ import HomeScreen from "./screens/HomeScreen";
 import AddChat from "./screens/AddChat";
 import ChatScreen from "./screens/ChatScreen";
 
+import { LogBox } from "react-native";
+import _ from "lodash";
+
+LogBox.ignoreLogs(["Warning:..."]); // ignore specific logs
+LogBox.ignoreAllLogs(); // ignore all logs
+const _console = _.clone(console);
+console.warn = (message) => {
+  if (message.indexOf("Setting a timer") <= -1) {
+    _console.warn(message);
+  }
+};
+
 const Stack = createStackNavigator();
 
 const globalScreenOptions = {
-    headerStyle: { backgroundColor: "#ed7d31" },
-    headerTitleStyle: { color: "white" },
-    headerTintColor: "white",
+  headerStyle: { backgroundColor: "#ed7d31" },
+  headerTitleStyle: { color: "white" },
+  headerTintColor: "white"
 };
 
 export default function App() {
-    return (
-        <NavigationContainer>
-            <Stack.Navigator
-                initialRouteName="Login"
-                screenOptions={globalScreenOptions}
-            >
-                <Stack.Screen name="Login" component={LoginScreen} />
-                <Stack.Screen name="Register" component={RegisterScreen} />
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="AddChat" component={AddChat} />
-                <Stack.Screen name="Chat" component={ChatScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
-    );
+  return (
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Login"
+        screenOptions={globalScreenOptions}
+      >
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Register" component={RegisterScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="AddChat" component={AddChat} />
+        <Stack.Screen name="Chat" component={ChatScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
+  }
 });

@@ -60,7 +60,6 @@ export default function LoginScreen({ navigation }) {
                 buttonStyle={styles.buttonUp}
                 titleStyle={{ color: "#ed7d31" }}
             />
-            <View style={{ height: 100 }} />
         </KeyboardAvoidingView>
     );
 }
