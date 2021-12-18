@@ -28,9 +28,7 @@ export default function LoginScreen({ navigation }) {
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
             <StatusBar style="light" />
             <Image
-                source={{
-                    uri: require("../assets/wetalk.png"),
-                }}
+                source={require("../assets/wetalk.png")}
                 style={{ width: 250, height: 200 }}
             />
             <View style={styles.inputContainer}>
