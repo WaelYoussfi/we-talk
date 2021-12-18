@@ -48,11 +48,11 @@ const ChatScreen = ({ navigation, route }) => {
         >
           <Avatar
             rounded
-            source={{
-              uri:
-                messages[0]?.data.photoURL ||
-                "https://cencup.com/wp-content/uploads/2019/07/avatar-placeholder.png"
-            }}
+            source={
+              messages[0]?.data.photoURL
+                ? { uri: messages[0]?.data.photoURL }
+                : require("../assets/chat.jpg")
+            }
           />
           <Text
             style={{
