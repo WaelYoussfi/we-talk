@@ -1,3 +1,8 @@
+![login](/assets/4.jpg?raw=true "login") ![sign-up](/assets/3.jpg?raw=true "sign-up")
+![home](/assets/2.jpg?raw=true "home")
+![conversation](/assets/5.jpg?raw=true "conversation")
+![chat](/assets/1.jpg?raw=true "chat")
+
 # Expo CLI
 
 If you have problems with the code in this repository, please file issues & bug reports
